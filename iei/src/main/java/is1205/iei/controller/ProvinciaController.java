@@ -1,6 +1,5 @@
 package is1205.iei.controller;
 
-import is1205.iei.models.Localidad;
 import is1205.iei.models.Provincia;
 import is1205.iei.services.ProvinciaService;
 import org.springframework.http.ResponseEntity;

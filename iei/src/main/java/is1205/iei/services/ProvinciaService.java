@@ -24,4 +24,16 @@ public class ProvinciaService {
     public void deleteProvincia(Long cod_provincia) {
         provinciaRepository.deleteById(cod_provincia);
     }
+
+    public Provincia findOrCreate(String nombre) {
+        Provincia provincia = provinciaRepository.findByNombre(nombre);
+
+        if(provincia == null) {
+            provincia = new Provincia();
+            provincia.setNombre(nombre);
+            provincia = provinciaRepository.save(provincia);
+        }
+
+        return provincia;
+    }
 }
