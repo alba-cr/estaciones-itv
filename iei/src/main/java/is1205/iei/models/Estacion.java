@@ -4,16 +4,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
-
 
 @Entity
 @Data
 public class Estacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long cod_estacion;
+
     private String nombre;
     private Tipo tipo;
     private String direccion;
@@ -24,11 +25,8 @@ public class Estacion {
     private String horario;
     private String contacto;
     private String url;
-    private int id_provincia;
+
+    @ManyToOne
+    @JoinColumn(name = "localidad_id")
+    private Localidad localidad;
 }
-
-
-
-
-
-
