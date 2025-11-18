@@ -1,6 +1,6 @@
-package is1205.iei.services;
+package is1205.iei.service;
 
-import is1205.iei.models.Provincia;
+import is1205.iei.model.Provincia;
 import is1205.iei.repository.ProvinciaRepository;
 import org.springframework.stereotype.Service;
 

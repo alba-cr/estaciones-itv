@@ -1,7 +1,7 @@
 package is1205.iei.controller;
 
-import is1205.iei.models.Localidad;
-import is1205.iei.services.LocalidadService;
+import is1205.iei.model.Localidad;
+import is1205.iei.service.LocalidadService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

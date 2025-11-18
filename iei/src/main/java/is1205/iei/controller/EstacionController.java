@@ -1,7 +1,7 @@
 package is1205.iei.controller;
 
-import is1205.iei.models.Estacion;
-import is1205.iei.services.EstacionService;
+import is1205.iei.model.Estacion;
+import is1205.iei.service.EstacionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

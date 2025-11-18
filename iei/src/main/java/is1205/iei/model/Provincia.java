@@ -1,4 +1,4 @@
-package is1205.iei.models;
+package is1205.iei.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,18 +1,18 @@
-package is1205.iei.services;
+package is1205.iei.service;
 
-import is1205.iei.models.Estacion;
-import is1205.iei.models.Localidad;
-import is1205.iei.repository.EstacionRespository;
+import is1205.iei.model.Estacion;
+import is1205.iei.model.Localidad;
+import is1205.iei.repository.EstacionRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class EstacionService {
-    private final EstacionRespository estacionRepository;
+    private final EstacionRepository estacionRepository;
     private LocalidadService localidadService;
 
-    public EstacionService(EstacionRespository estacionRepository, LocalidadService localidadService) {
+    public EstacionService(EstacionRepository estacionRepository, LocalidadService localidadService) {
         this.estacionRepository = estacionRepository;
         this.localidadService = localidadService;
     }

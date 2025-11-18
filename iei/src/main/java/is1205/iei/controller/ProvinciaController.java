@@ -1,7 +1,7 @@
 package is1205.iei.controller;
 
-import is1205.iei.models.Provincia;
-import is1205.iei.services.ProvinciaService;
+import is1205.iei.model.Provincia;
+import is1205.iei.service.ProvinciaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
